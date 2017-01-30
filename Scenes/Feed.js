@@ -1,33 +1,61 @@
-import React from "react";
-import {StyleSheet,Text,View,Navigator,AppRegistry} from "react-native";
-import {createRouter,NavigationProvider,StackNavigation} from "@exponent/ex-navigation";
-import { Container, Content, Icon, Picker, Button, Header, Title, InputGroup, Input } from 'native-base';
+import React, { Component } from 'react';
+import { Image } from 'react-native';
+import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon } from 'native-base';
 
 export default class Feed extends React.Component {
-static route = {
+    static route = {
     NavigationTab: {
       title: 'feed',
     },
   }
+    render() {
+        return (
+            <Container>
+                <Content>
+                    <Card style={{ flex: 0 }}>
+                        <CardItem>
+                            <Thumbnail source={require('./personaltrain.png')} />
+                            <Text>Personal Trainer</Text>
+                            <Text note>Corey Howell</Text>
+                        </CardItem>
 
-render() {
-    return(
-       <Container>
-                <Header searchBar rounded style={{backgroundColor: '#f2f2f2'}}>
-                    <InputGroup>
-                        <Icon name="ios-search" />
-                        <Input placeholder="Search" />
-                        <Icon name="ios-people" />
-                    </InputGroup>
-                    <Button transparent>
-                        Search
-                    </Button>
-                </Header> 
+                        <CardItem cardBody> 
+                            <Image style={{ resizeMode: 'cover' }} source={require('./personaltrain.png')} /> 
+                            <Text>
+                                Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
+                            </Text>
+                            <Button transparent textStyle={{color: '#87838B'}}>
+                                <Icon name="ios-basketball" />
+                                <Text>1,926 stars</Text>
+                            </Button>
+                        </CardItem>
+                   </Card>
+                    <Card style={{ flex: 0 }}>
+                        <CardItem>
+                            <Thumbnail source={require('./personaltrain.png')} />
+                            <Text>Personal Trainer</Text>
+                            <Text note>Corey Howell</Text>
+                        </CardItem>
+
+                        <CardItem cardBody> 
+                            <Image style={{ resizeMode: 'cover' }} source={require('./personaltrain.png')} /> 
+                            <Text>
+                                Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
+                            </Text>
+                            <Button transparent textStyle={{color: '#87838B'}}>
+                                <Icon name="ios-basketball" />
+                                <Text>1,926 stars</Text>
+                            </Button>
+                        </CardItem>
+                   </Card>
+                </Content>
             </Container>
-    );
+        );
+    }
 }
-}
-// I need to have a DeckSwiper here, to file through potential jobs (peoples profiles)
+
+// Each card will pull a persons profile image to be the thumbnail and a summary of themselves. Accompanied by a stock image I choose for each category
+// As well as stars for peoples approval the more stars the better the person. quailty wise
 // The search bar should also help people when searching for a specific field you will find cards that pop up and you can swift through those.
 // When the swipe the card to the right you want to talk to this person and a chat will be prompted in the matches tab.
 // When you swipe right that means you dont have an interest in this person right now and will be archived for 24 hours.
