@@ -65,4 +65,5 @@ export default class Feed extends React.Component {
 // Suggestions if you may, i.e: personal trainer, web dev, computer tech, massage therapist... etc....
 // Also they can choose location radius 1 mile-100 miles, or even international.. But always based off their location.
 // Cards will be pulled once searched based on location chosen and what profession the user is looking for specifically.
+// onPress of the card will open up the full summary of the person and will allow the the user to either start a chat with this person or continue looking.
 
