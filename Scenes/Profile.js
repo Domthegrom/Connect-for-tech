@@ -73,3 +73,6 @@ const styles = StyleSheet.create({
      color: '#b2b2b2'
    }
 })
+
+
+//Will pull linkedin profile skills summary maybe resume... But take it all even profile picture!
