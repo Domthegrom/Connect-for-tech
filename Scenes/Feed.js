@@ -64,3 +64,5 @@ export default class Feed extends React.Component {
 // They will click the search button and it will show them the various different options that the app handles.
 // Suggestions if you may, i.e: personal trainer, web dev, computer tech, massage therapist... etc....
 // Also they can choose location radius 1 mile-100 miles, or even international.. But always based off their location.
+// Cards will be pulled once searched based on location chosen and what profession the user is looking for specifically.
+
