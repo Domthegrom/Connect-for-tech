@@ -18,3 +18,6 @@ export default class Matches extends React.Component {
         );
     }
 }
+
+
+//https://github.com/FaridSafi/react-native-gifted-chat this can be of help marcello!

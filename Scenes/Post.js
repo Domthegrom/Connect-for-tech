@@ -1,24 +1,58 @@
 import React, { Component } from 'react';
-import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title } from 'native-base';
-import { StyleSheet, View, TouchableOpacity, Image, AppRegistry} from 'react-native';
+import { Container, Content, Card, CardItem, Text, Header, Button} from 'native-base';
+import { StyleSheet, View, TouchableOpacity, Image, AppRegistry,} from 'react-native';
 
-export default class Post extends React.Component {
- static route = {
+
+export default class Feed extends React.Component {
+
+   static route = {
     NavigationTab: {
       title: 'post',
     },
   }
-
     render() {
         return (
-          <View>
-          <Text>This is where you post your profile! You can create a profile and post it for a 7-day free trial
-          after that you will be charged at the monthly rate
-          </Text>
-          </View>
-            
+            <Container>
+            <Header style={{backgroundColor: '#4a8bfc'}}>
+               </Header>
+                <Content>
+                    <Card style={{backgroundColor: '#4a8bfc'}}>
+                        <CardItem>                        
+                            <Text style={styles.TextOne}>
+                                Post your Profile for Free!
+                            </Text>
+                            <Text style={styles.TextTwo}>
+                            Get hired by people in need of your skills! In our 7-day free trial.
+                            </Text>
+                            <Button large style={styles.StartedB}>
+                                  Get Started
+                            </Button>
+                        </CardItem>
+                    </Card>
+                </Content>
+                
+            </Container>
         );
     }
 }
 
-//https://github.com/FaridSafi/react-native-gifted-chat this can be of help marcello!
+const styles = StyleSheet.create({
+   StartedB: {
+     alignItems: 'center', 
+     alignSelf: 'center',
+   },
+   TextOne: {
+     fontSize: 24, 
+     paddingVertical: 20,
+     color: 'white', 
+     alignItems: 'center', 
+     alignSelf: 'center',
+   },
+   TextTwo: {
+     fontSize: 18, 
+     color: 'white', 
+     paddingVertical: 25,
+     alignItems: 'center', 
+     alignSelf: 'center',
+   }
+}) 

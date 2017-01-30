@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon } from 'native-base';
+import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Header, Title, InputGroup, Input,} from 'native-base';
 
 export default class Feed extends React.Component {
     static route = {
@@ -11,6 +11,17 @@ export default class Feed extends React.Component {
     render() {
         return (
             <Container>
+             <Header searchBar rounded>
+                    <InputGroup>
+                        <Icon name="ios-search" />
+                        <Input placeholder="Search" />
+                        <Icon name="ios-people" />
+                    </InputGroup>
+                    <Button transparent>
+                        Search
+                    </Button>
+                </Header>
+                
                 <Content>
                     <Card style={{ flex: 0 }}>
                         <CardItem>
@@ -60,3 +71,7 @@ export default class Feed extends React.Component {
 // When the swipe the card to the right you want to talk to this person and a chat will be prompted in the matches tab.
 // When you swipe right that means you dont have an interest in this person right now and will be archived for 24 hours.
 // When you swipe up you are given the option to share this persons card via text/email/etc..
+// When someone wants to search for a specific field they want to hire or need assistance in. 
+// They will click the search button and it will show them the various different options that the app handles.
+// Suggestions if you may, i.e: personal trainer, web dev, computer tech, massage therapist... etc....
+// Also they can choose location radius 1 mile-100 miles, or even international.. But always based off their location.
