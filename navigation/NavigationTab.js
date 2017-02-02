@@ -1,6 +1,5 @@
 import Exponent from 'exponent';
 import React from 'react';
-import { Ionicons } from '@exponent/vector-icons';
 import { StyleSheet, View, Text, Image, Dimensions, ScrollView, TouchableHighlight,} from 'react-native';
 import { TabNavigation ,TabNavigationItem, StackNavigation} from '@exponent/ex-navigation';
 import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base';
@@ -21,7 +20,7 @@ export default class NavigationTab extends React.Component {
             title="Feed"
             selectedStyle={styles.selectedTab}
             renderTitle={this._renderTitle}
-            renderIcon={(isSelected) => <Ionicons name="ios-list-box-outline" size={30} color='blue' />}>
+            renderIcon={(isSelected) => <Icon name="ios-paper-outline" size={30} color='blue' />}>
             <StackNavigation initialRoute={Router.getRoute('feed')}/>
           </TabNavigationItem>
 
@@ -30,7 +29,7 @@ export default class NavigationTab extends React.Component {
             title="Matches"
             selectedStyle={styles.selectedTab}
             renderTitle={this._renderTitle}
-            renderIcon={(isSelected) => <Ionicons name="ios-people-outline" size={30} color='blue' />}>
+            renderIcon={(isSelected) => <Icon name="ios-list-box-outline" size={30} color='blue' />}>
             <StackNavigation initialRoute={Router.getRoute('matches')}/>
           </TabNavigationItem>
 
@@ -39,7 +38,7 @@ export default class NavigationTab extends React.Component {
             title="Profile"
             selectedStyle={styles.selectedTab}
             renderTitle={this._renderTitle}
-            renderIcon={(isSelected) => <Ionicons name="ios-person-outline" size={30} color='blue' />}>
+            renderIcon={(isSelected) => <Icon name="ios-person-outline" size={30} color='blue' />}>
             <StackNavigation initialRoute={Router.getRoute('profile')} />
           </TabNavigationItem>
 
@@ -48,7 +47,7 @@ export default class NavigationTab extends React.Component {
             title="Settings"
             selectedStyle={styles.selectedTab}
             renderTitle={this._renderTitle}
-            renderIcon={(isSelected) => <Ionicons name="ios-cog" size={30} color='blue' />}>
+            renderIcon={(isSelected) => <Icon name="ios-settings-outline" size={30} color='blue' />}>
           <StackNavigation initialRoute={Router.getRoute('settings')} />
           </TabNavigationItem>
 
@@ -98,6 +97,6 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
   selectedTab: {
-    backgroundColor: '#0084FF',
+    backgroundColor: '#f2f2f2',
   },
 });
