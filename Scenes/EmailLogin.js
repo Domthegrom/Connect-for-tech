@@ -13,7 +13,7 @@ export default class EmailLogin extends React.Component {
                    </Button>
                    
                    <Title style={{color: 'white'}}>Sign In</Title>
-                   <Button transparent onPress={() => this.props.navigator.push('profileCreator')}>
+                   <Button transparent onPress={() => this.props.navigator.push('feed')}>
                        <Icon style={{color: 'white'}} name='ios-checkmark-circle-outline'/>
                    </Button>
                </Header>

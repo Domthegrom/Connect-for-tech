@@ -11,10 +11,11 @@ export default class Matches extends React.Component {
 
     render() {
         return (
-          <View>
-          <Text>All conversations will be held here!!!</Text>
-          </View>
-            
+          <Container>
+          <Header style={{backgroundColor: '#4a8bfc'}}>
+          <Title style={{color: 'white'}}> Matches </Title>
+               </Header>
+          </Container>
         );
     }
 }

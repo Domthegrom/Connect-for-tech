@@ -57,7 +57,7 @@ etc.... you get the point(Literally anything)
 
 You can toggle distance 1mile-international.(Cheaper labor lol)
 You can toggle between specifics, what professional your actually looking for and what task is at hand.
-You will be granted a 7 or 14 day free trial to post yourself on here and to have people review your skills and contact you through the app if they wish.
+You will be granted a 7 or 14 day free trial to  yourself on here and to have people review your skills and contact you through the app if they wish.
 After that you will be charged monthly to have your profile hosted on the app different levels of memberships ranging from $5-$50/month. 
 One stop, faster then google or bing, search for the perfect person for your job or task at hand.
 

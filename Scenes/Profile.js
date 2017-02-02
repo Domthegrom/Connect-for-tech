@@ -18,11 +18,11 @@ static route = {
     render() {
         return (
           <Container style={{backgroundColor: '#f2f2f2'}}>
-               <Content>
-               <Header style={{backgroundColor: '#4a8bfc'}}>
+          <Header style={{backgroundColor: '#4a8bfc'}}>
 
                    <Title style={{color: 'white'}}>Profile Info</Title>
                </Header>
+               <Content>
                <List>
                   <Image style={styles.ProfilePic}source={require('./logo.png')}/> 
                   <ListItem itemDivider>

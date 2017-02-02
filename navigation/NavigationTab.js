@@ -2,7 +2,7 @@ import Exponent from 'exponent';
 import React from 'react';
 import { Ionicons } from '@exponent/vector-icons';
 import { StyleSheet, View, Text, Image, Dimensions, ScrollView, TouchableHighlight,} from 'react-native';
-import { TabNavigation,TabNavigationItem,StackNavigation} from '@exponent/ex-navigation';
+import { TabNavigation ,TabNavigationItem, StackNavigation} from '@exponent/ex-navigation';
 import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base';
 import Router from "./Router";
 
@@ -35,21 +35,21 @@ export default class NavigationTab extends React.Component {
           </TabNavigationItem>
 
           <TabNavigationItem
-            id="third"
-            title="Post"
-            selectedStyle={styles.selectedTab}
-            renderTitle={this._renderTitle}
-            renderIcon={(isSelected) => <Ionicons name="ios-add-circle-outline" size={30} color='blue' />}>
-          <StackNavigation initialRoute={Router.getRoute('post')} />
-          </TabNavigationItem>
-
-          <TabNavigationItem
             id="fourth"
             title="Profile"
             selectedStyle={styles.selectedTab}
             renderTitle={this._renderTitle}
             renderIcon={(isSelected) => <Ionicons name="ios-person-outline" size={30} color='blue' />}>
             <StackNavigation initialRoute={Router.getRoute('profile')} />
+          </TabNavigationItem>
+
+           <TabNavigationItem
+            id="third"
+            title="Settings"
+            selectedStyle={styles.selectedTab}
+            renderTitle={this._renderTitle}
+            renderIcon={(isSelected) => <Ionicons name="ios-cog" size={30} color='blue' />}>
+          <StackNavigation initialRoute={Router.getRoute('settings')} />
           </TabNavigationItem>
 
         </TabNavigation>

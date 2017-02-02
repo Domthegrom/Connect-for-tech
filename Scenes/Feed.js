@@ -25,13 +25,13 @@ export default class Feed extends React.Component {
                 <Content>
                     <Card style={{ flex: 0 }}>
                         <CardItem>
-                            <Thumbnail source={require('./personaltrain.png')} />
+                            <Thumbnail  source={require('./personaltrain.png')} />
                             <Text>Personal Trainer</Text>
                             <Text note>Corey Howell</Text>
                         </CardItem>
 
                         <CardItem cardBody> 
-                            <Image style={{ resizeMode: 'cover' }} source={require('./personaltrain.png')} /> 
+                            <Image style={{ resizeMode: 'cover' }}  source={require('./personaltrain.png')} /> 
                             <Text>
                                 Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
                             </Text>
@@ -43,13 +43,13 @@ export default class Feed extends React.Component {
                    </Card>
                     <Card style={{ flex: 0 }}>
                         <CardItem>
-                            <Thumbnail source={require('./personaltrain.png')} />
+                            <Thumbnail  source={require('./personaltrain.png')} />
                             <Text>Personal Trainer</Text>
                             <Text note>Corey Howell</Text>
                         </CardItem>
 
                         <CardItem cardBody> 
-                            <Image style={{ resizeMode: 'cover' }} source={require('./personaltrain.png')} /> 
+                            <Image style={{ resizeMode: 'cover' }}  source={require('./personaltrain.png')} /> 
                             <Text>
                                 Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
                             </Text>

@@ -13,8 +13,7 @@ export default class LoginPage extends React.Component {
                 <View style={styles.mainLogo}>
                 <Image source={require('./logo.png')}/>
                 </View>
-                <Button style={styles.facebookB} onPress={() => this.props.navigator.push('profileCreator')}>
-                   <Icon name='logo-linkedin'/>
+                <Button source={require('./SignIn.png')} style={styles.LinkedinB} onPress={() => this.props.navigator.push('profileCreator')}>
                    <Text style={{flex: 1}}>Login</Text>                 
                  </Button>
                  <Text  onPress={() => this.props.navigator.push('emailLogin')} style={{padding:10, alignSelf: 'center', paddingVertical: 25,fontSize: 15,}}>Login with Email</Text>
@@ -27,7 +26,7 @@ export default class LoginPage extends React.Component {
        );
    }
 }
-
+//The Red text (terms of use) and (Privacy policy) will have to be links to my website regarding this information.
 const styles = StyleSheet.create({
    loginTerms: {
        justifyContent: 'center',
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
        alignItems: 'stretch', 
        paddingHorizontal: 20,
    },
-   facebookB: {
+   LinkedinB: {
        padding:10, 
        flexDirection: 'row',
         alignItems: 'center', 

@@ -9,7 +9,7 @@ import Profile from '../Scenes/Profile';
 import EmailLogin from '../Scenes/EmailLogin';
 import NavigationTab from './NavigationTab';
 import Matches from '../Scenes/Matches';
-import Post from '../Scenes/Post';
+import Settings from '../Scenes/Settings';
 
 
 export default createRouter(() => ({
@@ -20,7 +20,7 @@ export default createRouter(() => ({
     login: () => LoginPage, 
     emailLogin: () => EmailLogin,
     matches: () => Matches,
-    post: () => Post,
+    settings: () => Settings,
     tabNav: () => NavigationTab,
   })
-);
+); 
