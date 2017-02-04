@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Text, Header, Button, List, ListItem, Icon, Badge,} from 'native-base';
+import { Container, Content, Card, CardItem, Text, Header, Button, List, ListItem, Icon, Badge,Title} from 'native-base';
 import { StyleSheet, View, TouchableOpacity, Image, AppRegistry,} from 'react-native';
 
 
@@ -14,6 +14,7 @@ export default class Settings extends React.Component {
         return (
              <Container>
               <Header style={{backgroundColor: '#4a8bfc'}}>
+               <Title style={{color: 'white'}}>Settings</Title>
                </Header>
                 <Content style={{backgroundColor: '#f2f2f2'}}>
                     <List>  

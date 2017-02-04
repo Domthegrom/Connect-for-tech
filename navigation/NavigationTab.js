@@ -42,7 +42,7 @@ export default class NavigationTab extends React.Component {
             <StackNavigation initialRoute={Router.getRoute('profile')} />
           </TabNavigationItem>
 
-           <TabNavigationItem
+          <TabNavigationItem
             id="third"
             title="Settings"
             selectedStyle={styles.selectedTab}

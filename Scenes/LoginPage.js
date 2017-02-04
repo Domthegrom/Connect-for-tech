@@ -13,10 +13,10 @@ export default class LoginPage extends React.Component {
                 <View style={styles.mainLogo}>
                 <Image source={require('./logo.png')}/>
                 </View>
-                <Button source={require('./SignIn.png')} style={styles.LinkedinB} onPress={() => this.props.navigator.push('profileCreator')}>
+                <Button source={require('./SignIn.png')} style={styles.LinkedinB} onPress={() => this.props.navigator.push('feed')}>
                    <Text style={{flex: 1}}>Login</Text>                 
                  </Button>
-                 <Text  onPress={() => this.props.navigator.push('emailLogin')} style={{padding:10, alignSelf: 'center', paddingVertical: 25,fontSize: 15,}}>Login with Email</Text>
+                 <Text onPress={() => this.props.navigator.push('emailLogin')} style={styles.EmailB}>Login with Email</Text>
                 <Text style={styles.loginTerms}> By Creating an Account with Connections,</Text>
                 <Text style={styles.loginTerms}> I agree to
                    <Text style={{color: 'red'}}> Terms of Use</Text> and
@@ -54,5 +54,12 @@ const styles = StyleSheet.create({
    },
    mainLogo: {
        paddingVertical: 200,
+   },
+   EmailB: {
+       padding:10, 
+       alignSelf: 'center', 
+       paddingVertical: 25,
+       fontSize: 15,
    }
+   
 }) 
