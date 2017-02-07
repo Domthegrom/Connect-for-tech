@@ -14,8 +14,7 @@ import Settings from '../Scenes/Settings';
 export default createRouter(() => ({
     login: () => LoginPage, 
     feed: () => Feed, 
-    profile: () => Profile, 
-    login: () => LoginPage, 
+    profile: () => Profile,
     emailLogin: () => EmailLogin,
     matches: () => Matches,
     settings: () => Settings,
