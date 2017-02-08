@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title, Thumbnail } from 'native-base';
+import { Container, Content, Card, CardItem, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title, Thumbnail } from 'native-base';
 import { StyleSheet, View, TouchableOpacity, Image, AppRegistry} from 'react-native';
 import { FontAwesome } from '@exponent/vector-icons';
 
@@ -17,41 +17,52 @@ static route = {
 
     render() {
         return (
-          <Container style={{backgroundColor: '#f2f2f2'}}>
-          <Header style={{backgroundColor: '#4a8bfc', paddingVertical: 15,}}>
-
-                   <Title style={{color: 'white'}}>Profile Info</Title>
+          <Container style={{backgroundColor: 'white'}}>
+          <Header style={{backgroundColor: '#4a8bfc'}}>
+                   <Title style={{color: 'white'}}>Profile</Title>
+                   <Button transparent onPress={() => this.props.navigator.push('profileC')}>
+                       <Icon style={{color: 'white'}} name='ios-add-outline'/>
+                   </Button>
                </Header>
                <Content>
                    <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
                  <Text style={styles.ProfileName}>Dominic Gozza</Text>
                <List>
-<<<<<<< HEAD
-=======
-                 <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
-                 <Text style={styles.ProfileName}>Dominic Gozza</Text>
->>>>>>> ef33e7d014e539d6f99dc39271e28d604b526a6b
                   <ListItem itemDivider>
                       <Text style={styles.DividerText}>Summary</Text>
                   </ListItem> 
-                   <InputGroup style={styles.InputText} borderType='underline' >
-                       <Input placeholder='' />
-                   </InputGroup>
+
+                   <Card>
+                        <CardItem button onPress={() => alert('Coming soon')}>
+                            <Text>This will not display the full summary but will only display 140 characters click on here to view and edit the full summary. 140 characters.</Text>
+                        </CardItem>
+                   </Card>
+
                     <ListItem itemDivider>
                       <Text style={styles.DividerText}>Experience</Text>
-                   </ListItem>
-                   <InputGroup style={styles.InputText} borderType='underline'>
-                       <Input placeholder=''/>
-                   </InputGroup>
+                   </ListItem>  
+                   
+                   <Card>
+                        <CardItem button onPress={() => alert('Coming soon')}>
+                            <Text>This will not display the full experience but will only display 140 characters click on here to view and edit the full experience list......</Text>
+                        </CardItem>
+                   </Card>
                    <ListItem itemDivider>
                       <Text style={styles.DividerText}>Education</Text>
                    </ListItem>
-                   <InputGroup style={styles.InputText} borderType='underline'>
-                       <Input placeholder=''/>
-                   </InputGroup>
+                   <Card>
+                        <CardItem button onPress={() => alert('Coming soon')}>
+                            <Text>This will not display the full education but will only display 140 characters click on here to view and edit the full education list........</Text>
+                        </CardItem>
+                   </Card>
                    <ListItem itemDivider>
                       <Text style={styles.DividerText}>Key Skills</Text>
                    </ListItem>
+                   <Card>
+                        <CardItem button onPress={() => alert('Coming soon')}>
+                            <Text>This will not display the full Key Skills but will only display 140 characters click on here to view and edit the full Key Skills list......</Text>
+                        </CardItem>
+                   </Card>
                    </List>
                </Content>
            </Container>

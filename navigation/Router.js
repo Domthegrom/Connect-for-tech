@@ -11,6 +11,8 @@ import Matches from '../Scenes/Matches';
 import Settings from '../Scenes/Settings';
 import TermsOfUse from '../Scenes/TermsOfUse';
 import PrivacyPolicy from '../Scenes/PrivacyPolicy';
+import ProfileCreator from '../Scenes/ProfileCreator';
+
 
 export default createRouter(() => ({
     login: () => LoginPage, 
@@ -22,5 +24,6 @@ export default createRouter(() => ({
     tabNav: () => NavigationTab,
     terms: () => TermsOfUse,
     privacy: () => PrivacyPolicy,
+    profileC: () => ProfileCreator,
   })
 ); 
