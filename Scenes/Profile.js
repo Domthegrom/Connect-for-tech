@@ -34,7 +34,7 @@ static route = {
 
                    <Card>
                         <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full summary but will only display 140 characters click on here to view and edit the full summary. 140 characters.</Text>
+                            <Text note >Tap here to edit Summary</Text>
                         </CardItem>
                    </Card>
 
@@ -44,7 +44,7 @@ static route = {
                    
                    <Card>
                         <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full experience but will only display 140 characters click on here to view and edit the full experience list......</Text>
+                            <Text note >Tap here to edit Experience</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
@@ -52,7 +52,7 @@ static route = {
                    </ListItem>
                    <Card>
                         <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full education but will only display 140 characters click on here to view and edit the full education list........</Text>
+                            <Text note >Tap here to edit Education</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
@@ -60,7 +60,7 @@ static route = {
                    </ListItem>
                    <Card>
                         <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full Key Skills but will only display 140 characters click on here to view and edit the full Key Skills list......</Text>
+                            <Text note >Tap here to edit Key Skills</Text>
                         </CardItem>
                    </Card>
                    </List>
