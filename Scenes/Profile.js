@@ -23,9 +23,9 @@ static route = {
                    <Title style={{color: 'white'}}>Profile Info</Title>
                </Header>
                <Content>
-               <List>
-                 <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
+                   <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
                  <Text style={styles.ProfileName}>Dominic Gozza</Text>
+               <List>
                   <ListItem itemDivider>
                       <Text style={styles.DividerText}>Summary</Text>
                   </ListItem> 

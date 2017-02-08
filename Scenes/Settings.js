@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text, Header, Button, List, ListItem, Icon, Badge,Title} from 'native-base';
 import { StyleSheet, View, TouchableOpacity, Image, AppRegistry,} from 'react-native';
-
+import TermsOfUse from './TermsOfUse';
 
 export default class Settings extends React.Component {
 
@@ -17,32 +17,36 @@ export default class Settings extends React.Component {
                <Title style={{color: 'white'}}>Settings</Title>
                </Header>
                 <Content style={{backgroundColor: '#f2f2f2'}}>
-                    <List>  
-                        <ListItem iconRight>
-                         <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
+                    <Card>
+                        <CardItem button onPress={() => alert('hi')}>
                             <Text>Invite Friends</Text>
-                        </ListItem>
-                        <ListItem iconRight>
-                        <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
-                            <Text>Terms of Usage</Text>
-                        </ListItem>
-                        <ListItem iconRight>
-                        <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
+                        </CardItem>
+                        </Card>
+                        <Card>
+                        <CardItem button onPress={() => this.props.navigator.push('terms')}>
+                            <Text>Terms Of Use</Text>
+                        </CardItem>
+                        </Card>
+                        <Card>
+                        <CardItem button onPress={() => this.props.navigator.push('privacy')}>
                             <Text>Privacy Policy</Text>
-                        </ListItem>
-                          <ListItem iconRight>
-                          <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
-                            <Text>Rate Connections!</Text>
-                        </ListItem>
-                          <ListItem iconRight>
-                          <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
+                        </CardItem>
+                        </Card>
+                        <Card>
+                        <CardItem button onPress={() => alert('hi')}>
+                            <Text>Rate (App name)</Text>
+                        </CardItem>
+                        </Card>
+                        <Card>
+                        <CardItem button onPress={() => alert('Are you sure you want to sign out?')}>
                             <Text>Sign Out</Text>
-                        </ListItem>
-                          <ListItem iconRight>
-                          <Icon name="ios-arrow-round-forward" style={{ color: '#4a8bfc' }} />
+                        </CardItem>
+                        </Card>
+                        <Card>
+                        <CardItem button onPress={() => alert('Are you sure you want to delete your account?')}>
                             <Text style={{color: 'red'}}>Delete My Account</Text>
-                        </ListItem>
-                    </List>
+                        </CardItem>
+                        </Card>
                 </Content>
             </Container>
         );

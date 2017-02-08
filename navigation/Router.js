@@ -9,7 +9,8 @@ import EmailLogin from '../Scenes/EmailLogin';
 import NavigationTab from './NavigationTab';
 import Matches from '../Scenes/Matches';
 import Settings from '../Scenes/Settings';
-
+import TermsOfUse from '../Scenes/TermsOfUse';
+import PrivacyPolicy from '../Scenes/PrivacyPolicy';
 
 export default createRouter(() => ({
     login: () => LoginPage, 
@@ -19,5 +20,7 @@ export default createRouter(() => ({
     matches: () => Matches,
     settings: () => Settings,
     tabNav: () => NavigationTab,
+    terms: () => TermsOfUse,
+    privacy: () => PrivacyPolicy,
   })
 ); 

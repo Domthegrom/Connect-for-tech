@@ -13,7 +13,7 @@ export default class LoginPage extends React.Component {
                 <View style={styles.mainLogo}>
                 <Image source={require('./logo.png')}/>
                 </View>
-                <Button source={require('./SignIn.png')} style={styles.LinkedinB} onPress={() => this.props.navigator.push('tabNav')}>
+                <Button source={require('./Linkedins.png')} style={styles.LinkedinB} onPress={() => this.props.navigator.push('tabNav')}>
                    <Text style={{flex: 1}}>Login</Text>                 
                  </Button>
                  <Text onPress={() => this.props.navigator.push('emailLogin')} style={styles.EmailB}>Login with Email</Text>
