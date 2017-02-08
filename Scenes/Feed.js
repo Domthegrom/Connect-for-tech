@@ -25,36 +25,36 @@ export default class Feed extends React.Component {
                 <Content>
                     <Card style={{ flex: 0 }}>
                         <CardItem>
-                            <Thumbnail  source={require('./personaltrain.png')} />
-                            <Text>Personal Trainer</Text>
-                            <Text note>Corey Howell</Text>
+                            <Thumbnail  source={require('./dom.png')} />
+                            <Text>Website Developer</Text>
+                            <Text note>Dominic Gozza</Text>
                         </CardItem>
 
                         <CardItem cardBody> 
-                            <Image style={{ resizeMode: 'cover' }}  source={require('./personaltrain.png')} /> 
+                            <Image style={{ resizeMode: 'cover' }}  source={require('./webdevs.png')} /> 
                             <Text>
-                                Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
+                                This is an example of the bio for the cards this is an example of the bio for the cards this is an example of the bio for the cards only 140
                             </Text>
                             <Button transparent textStyle={{color: '#87838B'}}>
-                                <Icon name="ios-basketball" />
+                                <Icon name="ios-create-outline" />
                                 <Text>1,926 stars</Text>
                             </Button>
                         </CardItem>
                    </Card>
                     <Card style={{ flex: 0 }}>
                         <CardItem>
-                            <Thumbnail  source={require('./personaltrain.png')} />
-                            <Text>Personal Trainer</Text>
-                            <Text note>Corey Howell</Text>
+                            <Thumbnail  source={require('./dom.png')} />
+                            <Text>Website Developer</Text>
+                            <Text note>Dominic Gozza</Text>
                         </CardItem>
 
                         <CardItem cardBody> 
-                            <Image style={{ resizeMode: 'cover' }}  source={require('./personaltrain.png')} /> 
+                            <Image style={{ resizeMode: 'cover' }}  source={require('./webdevs.png')} /> 
                             <Text>
-                                Certified Personal Trainer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
+                                Certified Website Developer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
                             </Text>
                             <Button transparent textStyle={{color: '#87838B'}}>
-                                <Icon name="ios-basketball" />
+                                <Icon name="ios-create-outline" />
                                 <Text>1,926 stars</Text>
                             </Button>
                         </CardItem>
@@ -73,7 +73,7 @@ export default class Feed extends React.Component {
 // When you swipe up you are given the option to share this persons card via text/email/etc..
 // When someone wants to search for a specific field they want to hire or need assistance in. 
 // They will click the search button and it will show them the various different options that the app handles.
-// Suggestions if you may, i.e: personal trainer, web dev, computer tech, massage therapist... etc....
+// Suggestions if you may, i.e: Website Developer, web dev, computer tech, massage therapist... etc....
 // Also they can choose location radius 1 mile-100 miles, or even international.. But always based off their location.
 // Cards will be pulled once searched based on location chosen and what profession the user is looking for specifically.
 // onPress of the card will open up the full summary of the person and will allow the the user to either start a chat with this person or continue looking.

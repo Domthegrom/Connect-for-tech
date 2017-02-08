@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title } from 'native-base';
+import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title, Thumbnail } from 'native-base';
 import { StyleSheet, View, TouchableOpacity, Image, AppRegistry} from 'react-native';
 import { FontAwesome } from '@exponent/vector-icons';
 
@@ -18,13 +18,14 @@ static route = {
     render() {
         return (
           <Container style={{backgroundColor: '#f2f2f2'}}>
-          <Header style={{backgroundColor: '#4a8bfc'}}>
+          <Header style={{backgroundColor: '#4a8bfc', paddingVertical: 15,}}>
 
                    <Title style={{color: 'white'}}>Profile Info</Title>
                </Header>
                <Content>
                <List>
-                  <Image style={styles.ProfilePic}source={require('./logo.png')}/> 
+                 <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
+                 <Text style={styles.ProfileName}>John Smith</Text>
                   <ListItem itemDivider>
                       <Text style={styles.DividerText}>Summary</Text>
                   </ListItem> 
@@ -66,11 +67,19 @@ const styles = StyleSheet.create({
        backgroundColor:'white',
    },
    ProfilePic: {
-
+       justifyContent: 'center',
+       alignItems: 'center',
+       alignSelf: 'center', 
    },
    DividerText: {
      fontSize: 12,
      color: '#b2b2b2'
+   },
+   ProfileName: {
+        paddingVertical: 16,
+        justifyContent: 'center',
+       alignItems: 'center',
+       alignSelf: 'center', 
    }
 })
 
