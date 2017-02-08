@@ -26,11 +26,6 @@ static route = {
                    <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
                  <Text style={styles.ProfileName}>Dominic Gozza</Text>
                <List>
-<<<<<<< HEAD
-=======
-                 <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
-                 <Text style={styles.ProfileName}>Dominic Gozza</Text>
->>>>>>> ef33e7d014e539d6f99dc39271e28d604b526a6b
                   <ListItem itemDivider>
                       <Text style={styles.DividerText}>Summary</Text>
                   </ListItem> 
