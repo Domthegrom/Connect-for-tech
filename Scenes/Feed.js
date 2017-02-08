@@ -37,7 +37,7 @@ export default class Feed extends React.Component {
                             </Text>
                             <Button transparent textStyle={{color: '#87838B'}}>
                                 <Icon name="ios-create-outline" />
-                                <Text>1,926 stars</Text>
+                                <Text>New Member</Text>
                             </Button>
                         </CardItem>
                    </Card>
@@ -51,11 +51,11 @@ export default class Feed extends React.Component {
                         <CardItem cardBody> 
                             <Image style={{ resizeMode: 'cover' }}  source={require('./webdevs.png')} /> 
                             <Text>
-                                Certified Website Developer, athletic training student, and pro surfer, Corey understands the demand, preparation, and focus required to be an elite athlete.  He has the ability to assess a client’s strengths, muscle weaknesses and biomechanics while tailoring a training program to make those deficits strengths.
+                                This is an example of the bio for the cards this is an example of the bio for the cards this is an example of the bio for the cards only 140
                             </Text>
                             <Button transparent textStyle={{color: '#87838B'}}>
                                 <Icon name="ios-create-outline" />
-                                <Text>1,926 stars</Text>
+                                <Text>Long Term Member</Text>
                             </Button>
                         </CardItem>
                    </Card>
