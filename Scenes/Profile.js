@@ -33,7 +33,7 @@ static route = {
                   </ListItem> 
 
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
                             <Text note >Tap here to edit Summary</Text>
                         </CardItem>
                    </Card>
@@ -43,7 +43,7 @@ static route = {
                    </ListItem>  
                    
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
                             <Text note >Tap here to edit Experience</Text>
                         </CardItem>
                    </Card>
@@ -51,7 +51,7 @@ static route = {
                       <Text style={styles.DividerText}>Education</Text>
                    </ListItem>
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
                             <Text note >Tap here to edit Education</Text>
                         </CardItem>
                    </Card>
@@ -59,7 +59,7 @@ static route = {
                       <Text style={styles.DividerText}>Key Skills</Text>
                    </ListItem>
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
                             <Text note >Tap here to edit Key Skills</Text>
                         </CardItem>
                    </Card>
