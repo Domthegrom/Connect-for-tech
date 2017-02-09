@@ -28,13 +28,13 @@ static route = {
                    <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
                  <Text style={styles.ProfileName}>Dominic Gozza</Text>
                <List>
-                  <ListItem itemDivider>
+                  <ListItem itemDivider >
                       <Text style={styles.DividerText}>Summary</Text>
                   </ListItem> 
 
                    <Card>
                         <CardItem button onPress={() => this.props.navigator.push('profileC')}>
-                            <Text note >Tap here to edit Summary</Text>
+                            <Text note style={styles.PlacerText}>Tap here to edit Summary</Text>
                         </CardItem>
                    </Card>
 
@@ -44,7 +44,7 @@ static route = {
                    
                    <Card>
                         <CardItem button onPress={() => this.props.navigator.push('profileC')}>
-                            <Text note >Tap here to edit Experience</Text>
+                            <Text note style={styles.PlacerText}>Tap here to edit Experience</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
@@ -52,7 +52,7 @@ static route = {
                    </ListItem>
                    <Card>
                         <CardItem button onPress={() => this.props.navigator.push('profileC')}>
-                            <Text note >Tap here to edit Education</Text>
+                            <Text note style={styles.PlacerText}>Tap here to edit Education</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
@@ -60,7 +60,7 @@ static route = {
                    </ListItem>
                    <Card>
                         <CardItem button onPress={() => this.props.navigator.push('profileC')}>
-                            <Text note >Tap here to edit Key Skills</Text>
+                            <Text note style={styles.PlacerText}>Tap here to edit Key Skills</Text>
                         </CardItem>
                    </Card>
                    </List>
@@ -90,6 +90,9 @@ const styles = StyleSheet.create({
    DividerText: {
      fontSize: 12,
      color: '#b2b2b2'
+   },
+   PlacerText: {
+       color: '#4a8bfc'
    },
    ProfileName: {
         paddingVertical: 16,
