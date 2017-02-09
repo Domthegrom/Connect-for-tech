@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content,Card,CardItem, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Header,Title } from 'native-base';
+import { Container, Content,Card,CardItem, List, ListItem, InputGroup, Thumbnail, Input, Icon, Text, Picker, Button, Header,Title } from 'native-base';
 import { StyleSheet, View, TouchableOpacity, Image, AppRegistry} from 'react-native';
 
 export default class ProfileCreator extends React.Component {
@@ -13,23 +13,32 @@ export default class ProfileCreator extends React.Component {
                    </Button>
                </Header>
                <Content>
-                   <Card>
-                        <CardItem header>                        
-                            <Text>Header</Text>
-                        </CardItem>
+                   <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
+                    <ListItem>
+                            <InputGroup>
+                                <Input inlineLabel label="First Name" placeholder="Dominic" />
+                            </InputGroup>
+                        </ListItem>
 
-                        <CardItem>                        
-                            <Text>
-                                Working on having a list few to enter in your info for your profile
-                            </Text>
-                        </CardItem>
-
-                        <CardItem header>                        
-                            <Text>Footer</Text>
-                        </CardItem>
-                   </Card>
+                         <ListItem>
+                            <InputGroup>
+                                <Input inlineLabel label="Last Name" placeholder="Gozza" />
+                            </InputGroup>
+                        </ListItem>
                </Content>
           </Container>
         );
     }
 }
+
+const styles = StyleSheet.create ({
+    ProfilePic: {
+         justifyContent: 'center',
+         alignItems: 'center',
+         alignSelf: 'center', 
+         paddingVertical: 50,
+    },
+    TextFields: {
+        paddingVertical: 15
+    }
+})
