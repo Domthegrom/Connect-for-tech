@@ -37,6 +37,7 @@ static route = {
                         </CardItem>
                    </Card>
                <List>
+<<<<<<< HEAD
                   <Card>
                         <CardItem IconLeft button onPress={() => alert('hi')}>
                             <Icon style={{color: '#4a8bfc'}} name='ios-star'/>
@@ -48,6 +49,13 @@ static route = {
                             <Text>Summary</Text>
                         </CardItem>
 
+=======
+                  <ListItem itemDivider >
+                      <Text style={styles.DividerText}>Summary</Text>
+                  </ListItem> 
+
+                   <Card>
+>>>>>>> 6d0361cee879e35607e85972cd175c370c28b12a
                         <CardItem button onPress={() => this.props.navigator.push('profileC')}>
                             <Text note style={styles.PlacerText}>Tap here to edit Summary</Text>
                         </CardItem>

@@ -25,6 +25,7 @@ export default class ProfileCreator extends React.Component {
                                 <Input inlineLabel label="Last Name" placeholder="Gozza" />
                             </InputGroup>
                         </ListItem>
+<<<<<<< HEAD
                         <ListItem>
                             <InputGroup>
                                 <Input inlineLabel label="Current Position"/>
@@ -56,6 +57,8 @@ export default class ProfileCreator extends React.Component {
                             </InputGroup>
                         </ListItem>
                         
+=======
+>>>>>>> 6d0361cee879e35607e85972cd175c370c28b12a
                </Content>
           </Container>
         );
@@ -72,4 +75,8 @@ const styles = StyleSheet.create ({
     TextFields: {
         paddingVertical: 15
     }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 6d0361cee879e35607e85972cd175c370c28b12a
