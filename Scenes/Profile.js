@@ -18,23 +18,38 @@ static route = {
     render() {
         return (
           <Container style={{backgroundColor: 'white'}}>
-          <Header style={{backgroundColor: '#4a8bfc'}}>
+          <Header style={{backgroundColor: '#4a8bfc', paddingVertical: 25, }}>
                    <Title style={{color: 'white'}}>Profile</Title>
                    <Button transparent onPress={() => this.props.navigator.push('profileC')}>
                        <Icon style={{color: 'white'}} name='ios-add-outline'/>
                    </Button>
                </Header>
                <Content>
+                   <Card style={{ flex: 1}}>
+                        <CardItem style ={{paddingVertical: 45}}>
                    <Thumbnail style={styles.ProfilePic}size={100} source={require('./dom.png')} />
-                 <Text style={styles.ProfileName}>Dominic Gozza</Text>
+                   <Button transparent onPress={() => this.props.navigator.push('profileC')}>
+                       <Icon style={{color: '#4a8bfc'}} name='ios-add-outline'/>
+                   </Button>
+                            <Text note>Dominic Gozza</Text>
+                            <Text note>Website Developer</Text>
+                            <Text note>Jacksonville, Florida</Text>
+                        </CardItem>
+                   </Card>
                <List>
-                  <ListItem itemDivider>
-                      <Text style={styles.DividerText}>Summary</Text>
-                  </ListItem> 
+                  <Card>
+                        <CardItem IconLeft button onPress={() => alert('hi')}>
+                            <Icon style={{color: '#4a8bfc'}} name='ios-star'/>
+                            <Text>Long Term Member</Text>
+                        </CardItem>
+                        </Card>
+                    <Card>
+                        <CardItem header>                        
+                            <Text>Summary</Text>
+                        </CardItem>
 
-                   <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full summary but will only display 140 characters click on here to view and edit the full summary. 140 characters.</Text>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
+                            <Text note style={styles.PlacerText}>Tap here to edit Summary</Text>
                         </CardItem>
                    </Card>
 
@@ -43,24 +58,24 @@ static route = {
                    </ListItem>  
                    
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full experience but will only display 140 characters click on here to view and edit the full experience list......</Text>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
+                            <Text note style={styles.PlacerText}>Tap here to edit Experience</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
                       <Text style={styles.DividerText}>Education</Text>
                    </ListItem>
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full education but will only display 140 characters click on here to view and edit the full education list........</Text>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
+                            <Text note style={styles.PlacerText}>Tap here to edit Education</Text>
                         </CardItem>
                    </Card>
                    <ListItem itemDivider>
                       <Text style={styles.DividerText}>Key Skills</Text>
                    </ListItem>
                    <Card>
-                        <CardItem button onPress={() => alert('Coming soon')}>
-                            <Text>This will not display the full Key Skills but will only display 140 characters click on here to view and edit the full Key Skills list......</Text>
+                        <CardItem button onPress={() => this.props.navigator.push('profileC')}>
+                            <Text note style={styles.PlacerText}>Tap here to edit Key Skills</Text>
                         </CardItem>
                    </Card>
                    </List>
@@ -90,6 +105,9 @@ const styles = StyleSheet.create({
    DividerText: {
      fontSize: 12,
      color: '#b2b2b2'
+   },
+   PlacerText: {
+       color: '#4a8bfc'
    },
    ProfileName: {
         paddingVertical: 16,

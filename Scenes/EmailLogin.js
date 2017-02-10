@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
        backgroundColor:'white',
    },
    PasswordButton: {
-       paddingVertical: 0,
        backgroundColor: '#4a8bfc',
        flex: 1,
        alignSelf: 'center',
+
    }
 })
